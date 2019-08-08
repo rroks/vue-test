@@ -1,9 +1,14 @@
 import Vue from "vue";
 import App from "./App.vue";
-import router from "./router";
+import router from "./index";
 import store from "./store";
+import "./axios_config";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 
 Vue.config.productionTip = false;
+// Vue.use(axios);
+Vue.use(ElementUI);
 
 new Vue({
   router,
